@@ -1,0 +1,158 @@
+.main-head {
+  display: flex;
+  justify-content: space-between;
+
+  max-width: 1170px;
+  margin: auto;
+
+  position: relative;
+  z-index: 0;
+}
+
+.main-head::after {
+  position: absolute;
+  content: "";
+  left: -9.65%;
+  right: 84.58%;
+  top: 23.14%;
+  bottom: 70.2%;
+
+  background: rgba(29, 78, 216, 0.45);
+  filter: blur(200px);
+
+  z-index: -5;
+}
+
+.main-head::before {
+  position: absolute;
+  content: "";
+  left: 76.11%;
+  right: 0.28%;
+  top: 10.52%;
+  bottom: 50.2%;
+
+  background: #5141da;
+  filter: blur(200px);
+
+  z-index: -5;
+}
+
+.wrapper-text {
+  max-width: 540px;
+  margin-top: 19%;
+}
+
+.title {
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: linear-gradient(89.83deg, #2563eb 0.11%, #d946ef 58.65%);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 5.8rem;
+  line-height: 1.44;
+}
+
+.main-info {
+  color: #e5e7eb;
+  opacity: 0.8;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 2;
+
+  margin-top: 29px;
+}
+
+.container-btns {
+  display: flex;
+  margin-top: 30px;
+}
+
+.title__btn {
+  font-size: 1.6rem;
+  padding: 20px 40px;
+  height: 61px;
+}
+
+.wrapper__btn-play {
+  display: flex;
+  align-items: center;
+  font-size: 1.6rem;
+  border: none;
+
+  padding-left: 23px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  margin-left: 32px;
+
+  cursor: pointer;
+
+  fill: #f9fafb;
+  color: #f9fafb;
+}
+
+.wrapper__btn-play:hover {
+  fill: #2563eb;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: linear-gradient(89.83deg, #2563eb 40%, #d946ef 58.65%);
+
+  cursor: pointer;
+}
+
+.btn-play__text {
+  margin-left: 23px;
+}
+
+.wrapper__img {
+  max-width: 680px;
+  min-width: 450px;
+}
+
+@media (min-width: 800px) and (max-width: 1170px) {
+  .main-head {
+    margin-left: 15px;
+  }
+
+  .wrapper-text {
+    max-width: 540px;
+    margin-top: 17%;
+  }
+
+  .wrapper__img {
+      margin-top: 8%;
+  }
+}
+
+@media (max-width: 800px) {
+  .wrapper__img {
+    display: none;
+  }
+
+  .wrapper-text {
+    width: 90%;
+    margin: auto;
+    margin-top: 30%;
+  }
+
+  .title {
+    font-size: 3.2rem;
+  }
+
+  .container-btns {
+    justify-content: space-between;
+  }
+
+  .title__btn {
+    font-size: 1.4rem;
+    padding: 0 25px;
+    height: 40px;
+  }
+
+  .wrapper__btn-play {
+    font-size: 1.4rem;
+    padding: 0;
+  }
+}

@@ -1,0 +1,55 @@
+.service-block {
+    max-width: 1170px;
+    margin-top: 8%;
+    margin-left: auto;
+    margin-right: auto;
+    color: #fff;
+}
+
+.service__title {
+    font-style: normal;
+font-weight: 700;
+font-size: 4.2rem;
+line-height: 1.3;
+text-align: center;
+}
+
+.service__subtitle {
+    max-width: 587px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    font-style: normal;
+font-weight: 400;
+font-size: 1.6rem;
+line-height: 1.625;
+text-align: center;
+}
+
+.card-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+@media (min-width: 800px) and (max-width: 1170px) {
+    .service-block {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 800px) {
+    .service-block {
+        width: 90%;
+    }
+
+    .service__title {
+        font-size: 3.2rem;
+    }
+
+    .service__subtitle {
+        font-size: 1.5rem;
+    }
+}

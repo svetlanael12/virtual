@@ -1,0 +1,17 @@
+.Btn {
+    color: #F9FAFB;
+    line-height: 18px;
+
+    background: linear-gradient(90.35deg, #2563EB 0.36%, #D946EF 201.02%);
+    border: none;
+    border-radius: 5px;
+}
+
+.btn-standart {
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.btn-standart:hover {
+    font-weight: 700;   
+}
