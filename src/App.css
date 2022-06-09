@@ -4,13 +4,14 @@
     box-sizing: border-box;
 
     font-family: 'DM Sans', sans-serif;
+    transition: 0.5s;
 }
 
 html {
     font-size: 62.5%;
     scroll-behavior: smooth;
-    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
+
 
 a {
     text-decoration: none;
@@ -28,6 +29,8 @@ img {
     background-color: #111827;
     
     z-index: 0;
+    overflow: hidden;
+   
 }
 
 .App::after {
@@ -41,3 +44,34 @@ img {
     opacity: 0.08;
     z-index: -1;
 }
+
+.none {
+    display: none;
+}
+
+.button-up {
+    position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 45px;
+  height: 45px;
+
+  border-radius: 50%;
+  border: 3px solid aliceblue;
+  background-color: rgba(255, 255, 255, 0);
+
+  font-size: 1.2rem;
+  color: aliceblue;
+  text-align: center;
+    }
+
+    .button-up:hover {
+        cursor: pointer;
+        color: #2563EB;
+        border-color: #2563EB;
+    }
+
+
+    
+    
+
